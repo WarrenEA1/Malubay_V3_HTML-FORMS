@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300..700&display=swap');
+
+#logo {
+    width: 80px; /* Adjust the width as desired */
+    height: auto; /* Maintain aspect ratio */
+}
+
+body {
+    font-family: "Spline Sans", sans-serif;
+    color: #777;
+    line-height: 1.7;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 600;
+    color: #222;
+}
+
+a {
+    color: #222;
+    text-decoration: none;
+    transition: all 0.4s;
+    font-weight: 600;
+}
+
+a:hover {
+    color: #ec9c34;
+}
+
+img {
+    width: 100%;
+}
+
+section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.shadow-on-hover {
+    transition: all 0.3s;
+}
+
+.shadow-on-hover:hover {
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
+
+.btn {
+    border-radius: 0;
+    padding: 14px 38px;
+}
+
+.btn-brand {
+    color: #fff;
+    font-weight: 500;
+    border-color: #ec9c34;
+    background-color: #ec9c34;
+}
+
+.btn-brand:hover {
+    color: #fff;
+    border-color: #ec9c34;
+    background-color: #ec9c34;
+}
+
+.bg-cover {
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+/*Slider */
+/*put an image background for slider/carousel*/
+.slide-1 {
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(food_bg.jpg);
+}
+
+.slide-2 {
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(food_bg1.jpg);
+}
+
+
+#heroSlider h6::after,
+#heroSlider h6::before {
+    content: " ";
+    width: 40px;
+    height: 4px;
+    background-color: #ffffff;
+    display: inline-block;
+    margin: 10px;
+    vertical-align: middle;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: rgba(0,0,0,0.6);
+    width: 40px;
+    height: 70px;
+    margin: auto;
+}
+
+/*About*/
+#about .divider {
+    width: 60px;
+    height: 2px;
+    display: block;
+    background-color: #ec9c34;
+}
+
+/*Intro Text*/
+
+.intro-text {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.intro-text p {
+    max-width: 500px;
+    margin: 16px auto 0 auto;
+}
+
+/* Menu */
+
+#menu .nav-pills .nav-link {
+    background-color: #fff;
+    margin-left: 8px;
+    margin-right: 8px;
+    color: #222;
+    border-radius: 100px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
+
+#menu .nav-pills .nav-link.active {
+    background-color: #F58d17;
+    color: #ffffff;
+}
+
+.menu-item .stars {
+    color: #F58d17;
+}
+
+/*Features*/
+#features {
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(food_bg1.jpg); ;
+}
+
+.feature {
+    border: 2px solid rgba(255,255,255,0.2);
+}
+
+.feature .feature-icon {
+    width: 80px;
+    height: 80px;
+    background-color: #ec9c34;
+    color: #fff;
+    font-size: 28px;
+    display: inline-grid;
+    align-content: center;
+    text-align: center;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+footer{
+    background-color: #111;
+}
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px ;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding:  10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0,9;
+}
+/* Hover affect on social media icon */
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footerNav ul li a{
+    color:white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+.footerBottom{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+@media (max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+    } 
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
+}
+
+/* CSS code to target specific IDs and set font color to white */
+#features,
+#testimony {
+    color: #fff;
+}

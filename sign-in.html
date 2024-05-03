@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation Form</title>
+    <link rel="stylesheet" href="style-reservation.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-white shadow py-2 sticky-top">
+        <div class="container   ">
+            <a class="navbar-brand" href="#">
+               <a href="index.html"><img src="logo1.png" alt="logo" id="logo"></a> 
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    <form action="" method="get"class="reservation-form"> 
+        <div id="subheader">
+          <h3>Reservation Form</h3> <br>
+        </div>
+
+        <div class="form-row">
+          <label for="name">Name: </label>
+          <input id="name" name ="name" type="text" placeholder="Enter name"/>
+        </div>
+    
+        <div class="form-row">
+          <label for = "email">Email: </label>
+          <input id="email" name="email" type="email" placeholder="customer@example.com"/>
+        </div>
+
+        <div class="form-row">
+          <label for="age">Age:</label>
+          <input id="age" name="age" type="number" placeholder="Enter your age" required>
+        </div>
+
+        <fieldset class="legacy-form-row">
+         <legend>Option</legend>
+          <input type="radio" value="Dine-in" id="option1" name="service-type">
+          <label for="option1" class="radio-label">Dine-in</label>
+
+          <input type="radio" value="Take-out" id="option2" name="service-type">
+          <label for="option2" class="radio-label">Take-out</label>
+        </fieldset>
+
+        <div class="form-row">
+          <label for="comment">Comment</label>
+          <textarea name="comment" id="comment"></textarea>
+            <div class="instructions">Thank you for visiting!</div>
+        </div>
+        <div class="form-row">
+          <button id="cancel">Cancel</button>
+          <button id="place-order">Place Order</button>
+        </div>
+    </form>
+    <nav>
+
+    </nav>
+    
+
+</body>
+</html>

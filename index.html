@@ -1,0 +1,704 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Food Daily</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-white shadow py-2 sticky-top">
+        <div class="container   ">
+            <a class="navbar-brand" href="#">
+                <img src="logo1.png" alt="logo" id="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sign-in.html">Reservation</a>
+                    </li>
+                </ul>
+                <a href="#menu" class="btn btn-brand">Start New Order</a>
+            </div>
+        </div>
+    </nav>
+
+    <!--Hero Slider-->
+    <div id="home" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+            <div class="carousel-item text-center bg-cover vh-100 active slide-1">
+                <div class="container h-100 d-flex align-items-center justify-content-center">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <h6 class="text-white">WELCOME TO FOOD DAILY</h6>
+                            <h1 class="display-1 fw-bold text-white">Discover the world with your plate</h1>
+                            <a href="sign-in.html" class="btn btn-brand">Reservation</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item text-center bg-cover vh-100 slide-2">
+                <div class="container h-100 d-flex align-items-center justify-content-center">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <h6 class="text-white">WELCOME TO FOOD DAILY</h6>
+                            <h1 class="display-1 fw-bold text-white">Celebrating Diversity, One Dish at a Time</h1>
+                            <a href="sign-in.html" class="btn btn-brand">Reservation</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroSlider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroSlider" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!--About-->
+    <section id="about">
+        <div class="container">
+            <div class="row gy-4 align-items-center">
+                <div class="col-lg-4">
+                    <img src="about.jpg" alt="">
+                </div>
+                <div class="col-lg-5">
+                    <h1>About us</h1>
+                    <div class="divider my-4"></div>
+                    <p>Welcome to Food Daily, where every meal is a celebration of culinary excellence and everyday
+                        dining. Our commitment to quality ingredients and creative recipes ensures that each dish is a
+                        delicious experience, shared with family and friends.</p>
+                    <p>With a focus on farm-fresh produce and expertly crafted flavors, our menu reflects a passion for
+                        both tradition and innovation. From hearty breakfasts to gourmet dinners, we take pride in
+                        offering you a diverse selection of dishes to satisfy every palate. Join us and savor the joy of
+                        food, daily.</p>
+                    <a href="#menu" class="btn btn-brand">Explore Menu</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Menu-->
+    <section id="menu" class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 intro-text">
+                    <h1>Explore Our Menu</h1>
+                    <p>"Crafting culinary delights to satisfy every palate, one dish at a time."</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <ul class="nav nav-pills mb-4 justify-content-center" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all"
+                        type="button" role="tab" aria-controls="pills-all" aria-selected="true">All Items</button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-breakfast-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-breakfast" type="button" role="tab" aria-controls="pills-breakfast"
+                        aria-selected="true">Breakfast</button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-lunch-tab" data-bs-toggle="pill" data-bs-target="#pills-lunch"
+                        type="button" role="tab" aria-controls="pills-lunch" aria-selected="true">Lunch</button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-dinner-tab" data-bs-toggle="pill" data-bs-target="#pills-dinner"
+                        type="button" role="tab" aria-controls="pills-dinner" aria-selected="true">Dinner</button>
+                </li>
+
+            </ul>
+
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-home-tab"
+                    tabindex="0">
+
+                    <div class="row gy-4">
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="All-Item1.jpeg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>4.8 Rating</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Grilled Shrimp</a></h5>
+                                    <p class="small">Succulent and flavorful grilled shrimp, versatile for salads,
+                                        wraps, tacos, or served as a protein option with sides.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="All-Item2.jpg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>4.8 Rating</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Roasted Cherry Tomatoes</a></h5>
+                                    <p class="small">Sweet and savory roasted cherry tomatoes, ideal for adding bursts
+                                        of flavor to salads, pasta dishes, or as a topping for toast or bruschetta.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="All-Item3.webp" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>4.8 Rating</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Quinoa and Black Bean Salad</a></h5>
+                                    <p class="small">Nutrient-rich quinoa and black bean salad, packed with protein and
+                                        fiber, perfect as a standalone dish or as a side for a main course.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="All-Item4.webp" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>4.8 Rating</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Crispy Bacon Bits</a></h5>
+                                    <p class="small">Crispy bacon bits, adding a smoky and savory flavor to salads,
+                                        omelets, sandwiches, or baked potatoes.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="All-Item5.jpg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>4.8 Rating</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Sautéed Mushrooms</a></h5>
+                                    <p class="small">Tender and earthy sautéed mushrooms, great for topping pizzas,
+                                        burgers, omelets, or serving as a side dish.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="All-Item6.webp" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>4.8 Rating</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Pickled Red Onions</a></h5>
+                                    <p class="small">Tangy and colorful pickled red onions, perfect for adding a zesty
+                                        kick to salads, sandwiches, tacos, or bowls.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="All-Item7.jpg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>4.8 Rating</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Hummus Dip</a></h5>
+                                    <p class="small">Creamy and flavorful hummus dip, made from chickpeas, tahini, and
+                                        spices, ideal for dipping vegetables, pita bread, or spreading on sandwiches and
+                                        wraps.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="All-Item8.jpg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>4.8 Rating</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Fudgy Mixed Herb Salad</a></h5>
+                                    <p class="small">A refreshing mix of fresh herbs such as parsley, cilantro, dill,
+                                        and mint, perfect for adding brightness and freshness to salads, soups, or as a
+                                        garnish for various dishes.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="tab-pane fade" id="pills-breakfast" role="tabpanel" aria-labelledby="pills-breakfast-tab"
+                    tabindex="0">
+                    <div class="row gy-4">
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="breakfast1.jpg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>4.8 Rating</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Avocado Toast with Poached Eggs</a></h5>
+                                    <p class="small">A popular and nutritious breakfast featuring mashed avocado spread
+                                        on whole-grain toast, topped with perfectly poached eggs, a sprinkle of red
+                                        pepper flakes, and a drizzle of olive oil or balsamic glaze.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="breakfast2.jpg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>4.8 Rating</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Berry Smoothie Bowl</a></h5>
+                                    <p class="small">BA refreshing and vibrant breakfast option made by blending mixed
+                                        berries, banana, spinach, and almond milk until smooth, then topped with
+                                        granola, sliced fruit, shredded coconut, and a dollop of Greek yogurt for added
+                                        protein and creaminess.
+                                        and olives
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="breakfast3.jpg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>4.8 Rating</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Vegetable Omelette</a></h5>
+                                    <p class="small">A hearty and customizable breakfast choice made by whisking
+                                        together eggs and milk, then cooking them in a skillet with sautéed vegetables
+                                        like bell peppers, onions, spinach, and mushrooms, folded over and served with a
+                                        side of whole-grain toast or roasted potatoes.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="breakfast4.jpeg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>4.8 Rating</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Greek Yogurt Parfait</a></h5>
+                                    <p class="small"> A light and satisfying breakfast parfait consisting of layers of
+                                        creamy Greek yogurt, homemade granola, and fresh fruit such as berries, sliced
+                                        banana, or diced mango, topped with a drizzle of honey or maple syrup for added
+                                        sweetness.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="pills-lunch" role="tabpanel" aria-labelledby="pills-lunch-tab"
+                    tabindex="0">
+                    <div class="row gy-4">
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="lunch1.webp" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>4.8 Rating</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Breakfast Budha Bowl</a></h5>
+                                    <p class="small">is a nutritious and balanced meal served in a bowl, featuring a
+                                        variety of grains, vegetables, proteins, and flavorful toppings
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="lunch3.jpg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>4.8 Rating</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Caprese Panini</a></h5>
+                                    <p class="small">A classic Italian-inspired sandwich featuring slices of fresh
+                                        mozzarella cheese, ripe tomatoes, and basil leaves, drizzled with balsamic glaze
+                                        and pressed between slices of crusty bread until warm and gooey.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="lunch4.jpg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>4.8 Rating</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Vegetable Stir-Fry with Tofu</a></h5>
+                                    <p class="small">A colorful and nutritious stir-fry made with an assortment of
+                                        vegetables such as bell peppers, broccoli, carrots, and snap peas, along with
+                                        cubes of tofu, all tossed in a flavorful soy-ginger sauce and served over
+                                        steamed rice or noodles.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="lunch5.jpg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>4.8 Rating</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Quinoa Salad with Roasted Vegetables</a></h5>
+                                    <p class="small">A hearty and satisfying salad made with fluffy quinoa, roasted
+                                        seasonal vegetables, fresh herbs, and a zesty lemon vinaigrette, served chilled
+                                        or at room temperature for a delicious and nutritious lunch option.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="pills-dinner" role="tabpanel" aria-labelledby="pills-dinner-tab"
+                    tabindex="0">
+                    <div class="row gy-4">
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="dinner1.jpg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>4.8 Rating</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Poke Bowl Salad</a></h5>
+                                    <p class="small">Fresh and vibrant dish featuring cubed raw fish, usually tuna or
+                                        salmon, served atop a bed of sushi rice or greens, and adorned with a variety of
+                                        colorful toppings like avocado, seaweed, cucumber, and sesame seeds
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="dinner2.jpg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>4.8 Rating</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Sushi Rolls</a></h5>
+                                    <p class="small">lso known as makizushi, are a staple of Japanese cuisine. They
+                                        typically consist of vinegared rice, seaweed (nori), and various fillings such
+                                        as raw fish (sashimi), cooked seafood,
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="dinner3.jpg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>4.8 Rating</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Spaghetti Carbonara</a></h5>
+                                    <p class="small">A classic Italian pasta dish made with spaghetti noodles, eggs,
+                                        cheese (typically Pecorino Romano or Parmesan), pancetta or guanciale, and black
+                                        pepper.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="dinner4.webp" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>4.8 Rating</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Chicken Tikka Masala</a></h5>
+                                    <p class="small">A flavorful Indian dish consisting of marinated and grilled chicken
+                                        pieces served in a rich and creamy tomato-based sauce with aromatic spices like
+                                        garam masala, cumin, coriander, and turmeric. It's often served with rice or
+                                        naan bread.
+                                        and olives
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        </div>
+
+
+    </section>
+
+    <!--Features-->
+    <section id="features" class="bg-cover">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 intro-text">
+                    <h1 class="text-white">Why to choose us?</h1>
+                    <p class="text-white">Customer Satisfaction: Our Commitment, Your Experience.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="feature py-5 px-4 text-center">
+                        <div class="feature-icon">
+                            <i class="ri-wifi-fill"></i>
+                        </div>
+                        <h4 class="text-white mt-4 mb-2">Free Wifi</h4>
+                        <p class="text-white">Stay connected while you dine with complimentary high-speed wifi, ensuring
+                            you can work, browse, or share your experience hassle-free.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="feature py-5 px-4 text-center">
+                        <div class="feature-icon">
+                            <i class="ri-restaurant-line"></i>
+                        </div>
+                        <h4 class="text-white mt-4 mb-2">Best Food</h4>
+                        <p class="text-white"> Indulge in culinary excellence, promising a delightful dining experience
+                            with every bite</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="feature py-5 px-4 text-center">
+                        <div class="feature-icon">
+                            <i class="ri-time-fill"></i>
+                        </div>
+                        <h4 class="text-white mt-4 mb-2">Fast service</h4>
+                        <p class="text-white"> Ensuring you spend less time waiting and more time savoring your meal</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="feature py-5 px-4 text-center">
+                        <div class="feature-icon">
+                            <i class="ri-customer-service-2-line"></i>
+                        </div>
+                        <h4 class="text-white mt-4 mb-2"> Customer Service</h4>
+                        <p class="text-white">Experience unparalleled hospitality and attention to detail from our
+                            friendly staff</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+<footer>
+    <div class="footerContainer">
+        <div class="socialIcons">
+            <a href="https://www.facebook.com/warren.malubay.33"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/warrenmalubay/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com/wrrnmlby"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.youtube.com/@warrenmalubay9486"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="footerNav">
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="terms-and-conditions.html">Terms and Conditions</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="https://www.facebook.com/warren.malubay.33">Contact Us</a></li>
+            </ul>
+        </div>
+
+    </div>
+</footer>
+</html>
